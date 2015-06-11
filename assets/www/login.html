@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Add Feed</title>
+   </head>
+   <body>
+      <div data-role="page" id="loginPage">
+         
+         <div data-role="content">
+            <div class="ui-grid-a"> 
+            	<div class="ui-block-a" style="width: 100%; padding-left:45%;padding-top:10%"> 
+                	<a href="#" style="width: 60%; ">
+                    	<img src="img/logo.png" style="width: 40%;top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+                    </a> 
+               </div>
+            
+               
+                <form id="loginForm" name="loginForm" action="index.html">
+                   <div data-role="fieldcontain">
+                      <label for="url-add">URL:</label>
+                      <input type="text" id="url-add" name="url-add" value="" required/>
+                   </div>
+                   <div data-role="fieldcontain">
+                      <label for="u-username">Username:</label>
+                      <input type="text" id="u-username" name="u-username" value="" required/>
+                   </div>
+                   <div data-role="fieldcontain">
+                      <label for="u-password">Password:</label>
+                      <input type="password" id="u-password" name="u-password" value="" required/>
+                   </div>
+                   <input type="submit" value="Login" />
+                   <div> New to SHIBA Survey? <a href="#" onclick='navigator.app.loadUrl("http://shiba-survey.org", { openExternal:true } );'> Sign-up</a></div>
+                </form>
+            </div>
+        </div>
+      </div>
+   </body>
+</html>

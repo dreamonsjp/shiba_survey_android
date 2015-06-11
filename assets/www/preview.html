@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      
+      <title>Detail Survey</title>
+      
+   </head>
+   <body>
+       <div id="previewSaved" data-role="page" data-title="Preview Saved Data" data-cache="false">
+           <div data-role="header" style="overflow:hidden;">
+                <h1>Survey Detail</h1>
+                <a href="#popupMenu" data-icon="gear" class="ui-btn-right" data-rel="popup">Menu</a>
+            </div><!-- /header -->
+            <div data-role="popup" id="popupMenu" data-theme="a" data-overlay-theme="b" data-history="false">
+                <ul data-role="listview" style="min-width:210px;">
+                   <li data-icon="refresh"><a href="#"  data-rel="back" id="refreshButtonPreview">Refresh</a></li>
+                   <li data-icon="back"><a href="#"  data-rel="back" id="backButtonPreview">Return</a></li>
+                   <li data-icon="delete"><a href="#"  data-rel="back" id="deleteAllButtonPreview">Delete All</a></li>
+                   <li data-icon="action"><a href="#"  data-rel="back" id="logoutButtonPreview">Logout</a></li>                    
+               </ul>
+            </div>
+            <div data-role="content" id="detailPreViewContent">
+                
+            </div>
+            <div id="sendingpopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+                 <p>Please wait while sending survey!</p>
+            </div>
+            <div id="deletinggpopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+                 <p>Please wait while deleting survey!</p>
+            </div>
+            <div id="popupLoadingSurvey" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while loading survey!</p>
+        </div>
+       </div>
+   </body>
+</html>

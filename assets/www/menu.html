@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Add Feed</title>
+   </head>
+   <body>
+      <div data-role="page" id="menupage">
+         <header data-role="header" data-back-btn="true" >
+            <h1>Survey Menu</h1>
+            <a href="#popupMenu" data-icon="gear" data-rel="popup" class="ui-btn-right">Menu</a>
+         </header>
+        <div data-role="popup" id="popupMenu" data-theme="a" data-overlay-theme="b" data-history="false">
+            <ul data-role="listview" style="min-width:210px;">
+               <li data-icon="refresh"><a href="#"  data-rel="back" id="refreshButtonMenu">Refresh</a></li>
+               <li data-icon="back"><a href="#"  data-rel="back" id="returnButtonMenu">Return</a></li>
+               <li data-icon="action"><a href="#" data-rel="back" id="logoutButtonMenu">Logout</a></li>                    
+           </ul>
+        </div>
+         <div data-role="content">
+            <input type="button" value="Refresh" id="menurefresh"/>
+            <br/>
+            <input type="button" value="Enter New Data" id="menuenter"/>
+            <br/>
+            <input type="button" value="Preview Saved Data" id="menupreview"/>
+            <br/>
+            <input type="button" value="Send All Saved Data" id="menusend"/>
+            <br/>
+         </div>
+          <div id="popupLoadingSurvey" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while loading survey!</p>
+        </div>
+          
+          <div id="popupSendingAllSurvey" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while your surveys are being sent!</p>
+        </div>
+          
+          <div id="refreshingPopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while refreshing survey!</p>
+        </div>
+          
+      </div>
+   </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Add Feed</title>
+   </head>
+   <body>
+   <div id="listsurvey" data-role="page" data-title="List Survey">
+         <div data-role="header" style="overflow:hidden;">
+            <h1>Survey List</h1>
+                <a href="#popupMenu" data-icon="gear" data-rel="popup" class="ui-btn-right">Menu</a>
+                
+            </div><!-- /header -->
+            <div data-role="popup" id="popupMenu" data-theme="a" data-overlay-theme="b" data-history="false">
+                 <ul data-role="listview"  style="min-width:210px;">
+                    <li data-icon="refresh"><a href="#"   data-rel="back" id="refreshButtonList">Refresh</a></li>
+                    <li data-icon="back" ><a href="#" data-rel="back" id="backButtonList">Back</a></li>
+                    <li data-icon="action"><a href="#"  data-rel="back" id="logoutButtonList">Logout</a></li>                    
+                </ul>
+            </div>
+         <div data-role="content">
+            <ul id="survey-list" data-role="listview" data-filter="false">
+            </ul>
+         </div>
+            <div id="refreshingListPopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while refreshing list surveys!</p>
+        </div>
+      </div>
+   </body>
+</html>

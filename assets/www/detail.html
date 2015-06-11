@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      
+      <title>Detail Survey</title>
+      
+   </head>
+   <body>
+   <div id="detailsurvey" data-role="page" data-title="Detail Survey" data-cache="false">
+         <div data-role="header" style="overflow:hidden;">
+            <h1>Survey Detail</h1>
+            <a href="#popupMenu" data-icon="gear" data-rel="popup" class="ui-btn-right">Menu</a>
+        </div><!-- /header -->
+         <div data-role="popup" id="popupMenu" data-theme="a" data-overlay-theme="b" data-history="false">
+            <ul data-role="listview" style="min-width:210px;">
+               <li data-icon="refresh"><a href="#"   data-rel="back" id="refreshButtonDetail">Refresh</a></li>
+               <li data-icon="forbidden"><a href="#"  data-rel="back" id="cancelButtonDetail">Cancel</a></li>
+               <li data-icon="action"><a href="#"  data-rel="back" id="logoutButtonDetail">Logout</a></li>                    
+           </ul>
+        </div>
+         <div data-role="content" id="detailContent">
+            <form id="surveySubmit">
+                <div id="surveyDetail">
+                </div>
+               
+            </form>
+         </div>
+         <div id="loadingPopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while loading survey!</p>
+        </div>
+         <div id="savingPopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while saving survey!</p>
+        </div>
+        <div id="uploadingpopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while uploading file!</p>
+        </div>
+        <div id="revertingPopup" data-role="popup" data-overlay-theme="a" class="ui-content" data-dismissible="false" data-history="false">
+            <p>Please wait while loading local saved!</p>
+        </div>
+      </div>
+   </body>
+</html>
